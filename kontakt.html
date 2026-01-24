@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<!-- dette giver bagrundsfarven og billedet i toppen:-->
+    <head>
+        <title>kontakt</title>
+    </head> 
+    <body style="background-color: #CC9999;">
+
+
+<!-- Billedet + overskrift indsættes herunder -->
+    <div class="billede-container">
+
+        <img src="tøj.jpg"alt="vintage" height="300" width="1450" class="baggrundsbillede">
+
+    <h1 class="overskrift-tekst">Luksus Vintage</h1>
+    </div>
+
+<!-- sidens overskrift (design) :--> 
+    <style>
+ /* Overskriften placeret ovenpå billedet */
+        .overskrift-tekst {
+            position: absolute;
+            top: 120px;    /* Afstand fra toppen af billedet */
+            left: 380px;   /* Afstand fra venstre side */
+            color: white; /* Hvid tekst så den kan ses */
+            margin: 0;
+            font-size: 100px;
+            font-family:palatino linotype; /* skrifttype */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Gør den nemmere at læse */}
+    </style>
+
+
+<!--  knappen der fører tilbage til menuen:-->
+ <nav>
+            <div position:bottom>
+        <a href="file:///Users/almabennetsen/Library/CloudStorage/OneDrive-Personligt/3.%20G/Informatik/Aflevering%204/Menu.html" target="_self">
+        <button class="overlay-tekst">menu</button>
+        </a>
+            </div>
+</nav>
+
+<!-- designet på menu-knappen:-->
+    <style>
+        .overlay-tekst {background-color: #FF9999; /* rosa baggrund */
+        color: white; /* Hvid tekst */
+        border: none; /* Ingen kant */
+        padding: 10px 20px; /* Indre polstring */
+        border-radius: 5px; /* Afrundede hjørner */
+        cursor: pointer; /* Ændrer musen til en pegefinger */
+        font-size: 16px;
+        transition: background-color 0.3s; /* Blød overgang ved hover */}
+        .overlay-tekst:hover {background-color: #FFCCCC; /* lysere rosa ved hover */}>
+    </style>
+
+
+
+<!-- placering af menu-knappen:-->
+    <style>
+        .billede-container {position: relative; /* Vigtigt for absolut positionering */
+        display: inline-block; /* Eller block, afhængig af layout */}
+        .overlay-tekst {
+        position: absolute;
+        top: 8%; /* Centrerer vertikalt (kan justeres) */
+        left: 5%; /* Centrerer horisontalt (kan justeres) */
+        transform: translate(-50%, -50%); /* Justerer midten præcist */
+        color: white; /* Gør teksten synlig */
+        background-color: #FF9999; /* Valgfrit: baggrund for læsbarhed */
+        padding: 10px;
+        text-align: center;}
+    </style>
+   
+
+<!-- Her begynder designet på selve siden:-->
+
+
+<!-- her er sidens overskrift "kontakt" og det står i midten af siden.:-->
+
+    <body><strong><u><h1 style="text-align: center;">KONTAKT</h1></u></strong></body>
+
+
+<!-- her har jeg bl.a indsat link til mailadressen:-->
+
+    <body><p style="text-align: center;"> Har du spørgsmål, forslag eller kender du en luksusgenbrugsbutik, der fortjener at blive fremhævet? <br> Så hører vi meget gerne fra dig på:
+
+    <br></br>
+            tlf. <a href="tel:61680714">ring op</a>
+    <br>
+            sms. <a href="sms:61680714">send besked</a>
+    <br>
+            mail. <a href="mailto:almabennetsen@gmail.com">kontakt@vintage.dk</a>
+
+    </p></body>
+
+
+</html>

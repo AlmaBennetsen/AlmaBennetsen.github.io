@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<!-- dette giver bagrundsfarven og billedet i toppen:-->
+	<head>
+		<title>Forside - Luksus vintage</title>
+	</head>
+
+	<body style="background-color: #CC9999">
+
+
+<!-- Billedet + overskrift indsættes herunder -->
+ 	<div class="billede-container">
+
+		<img src="tøj.jpg"alt="vintage" height="300" width="1450" class="baggrundsbillede">
+
+ 	<h1 class="overskrift-tekst">Luksus Vintage</h1>
+	</div>
+
+<!-- sidens overskrift (design) :--> 
+	<style>
+ /* Overskriften placeret ovenpå billedet */
+        .overskrift-tekst {
+            position: absolute;
+            top: 120px;    /* Afstand fra toppen af billedet */
+            left: 380px;   /* Afstand fra venstre side */
+            color: white; /* Hvid tekst så den kan ses */
+            margin: 0;
+            font-size: 100px;
+            font-family:palatino linotype; /* skrifttype */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Gør den nemmere at læse */}
+	</style>
+
+
+<!--  knappen der fører tilbage til menuen:-->
+ <nav>
+            <div position:bottom>
+        <a href="file:///Users/almabennetsen/Library/CloudStorage/OneDrive-Personligt/3.%20G/Informatik/Aflevering%204/Menu.html" target="_self">
+        <button class="overlay-tekst">menu</button>
+        </a>
+            </div>
+</nav>
+
+<!-- designet på menu-knappen:-->
+    <style>
+        .overlay-tekst {background-color: #FF9999; /* rosa baggrund */
+        color: white; /* Hvid tekst */
+        border: none; /* Ingen kant */
+        padding: 10px 20px; /* Indre polstring */
+        border-radius: 5px; /* Afrundede hjørner */
+        cursor: pointer; /* Ændrer musen til en pegefinger */
+        font-size: 16px;
+        transition: background-color 0.3s; /* Blød overgang ved hover */}
+        .overlay-tekst:hover {background-color: #FFCCCC; /* lysere rosa ved hover */}>
+    </style>
+
+
+
+<!-- placering af menu-knappen:-->
+    <style>
+        .billede-container {position: relative; /* Vigtigt for absolut positionering */
+        display: inline-block; /* Eller block, afhængig af layout */}
+        .overlay-tekst {
+        position: absolute;
+        top: 8%; /* Centrerer vertikalt (kan justeres) */
+        left: 5%; /* Centrerer horisontalt (kan justeres) */
+        transform: translate(-50%, -50%); /* Justerer midten præcist */
+        color: white; /* Gør teksten synlig */
+        background-color: #FF9999; /* Valgfrit: baggrund for læsbarhed */
+        padding: 10px;
+        text-align: center;}
+    </style>
+
+
+
+<!-- Her begynder designet på selve siden:-->
+
+
+<!-- Prag:-->
+	<br></br>
+	<br></br>
+	<div class="centreret">
+		<a target="blank" href="https://pragcopenhagen.com/">
+    		<img src="Prag.jpg" alt="Prag" height="250" width="250" class="skygge">
+    	</a>
+		
+		<div>
+        	<h2>Prag</h2>
+        	<p>📍 Har flere lokationer i både København og Aarhus
+        		<br></br>🗺️ populær vintage og secondhand-kæde
+        		<br></br> 👚Alt fra klassiske retrofund til nye accessories, ideel til at skabe helt personlige looks med karakter og historie
+        		<br></br>🏙️ inspireret af vintage-scenen i storbyer som Berlin og New York</p>
+    	</div>
+
+	</div>
+
+
+<!-- collectors cage:-->
+	<br></br>
+	<br></br>
+	<div class="centreret">
+		<a target="blank" href="https://collectorscage.dk/">
+    		<img src="Collectors cage.jpg" alt="Collectors cage" height="250" width="250" class="skygge">
+		</a>
+
+		<div>
+        	<h2>Collectors cage</h2>
+        	<p>📍 Amagertorv 31, 1160 København K, Danmark
+        		<br></br>👜 Autentiske istandsatte luksustasker
+        		<br></br>♻️ Fokus på sustainability og kvalitet
+        		<br></br> 🌏 Perfekt for både samlere og modeentusiaster, der vil shoppe designer-bags på en mere bæredygtig måde</p>
+    	</div>
+
+    	
+
+	</div>
+
+
+<!-- Times Up Vintage:-->
+	<br></br>
+	<br></br>
+	<div class="centreret">
+		<a target="blank" href="https://www.timesupshop.com/?srsltid=AfmBOoobXzDtPJ-Q07KS-EKTG9B8ryD-CoRkgImCnNahU5UB4mDzrn0r">
+    		<img src="Times Up Vintage.jpeg" alt="Times Up Vintage" height="250" width="250" class="skygge">
+		</a>
+
+		<div>
+        	<h2>Times Up Vintage</h2>
+        	<p>📍 Krystalgade 4, 1172 Indre By, Danmark
+        		<br></br> 👠 Velkuraterede udvalg af vintage tøj, sko og accessories
+        		<br></br>🕰️ Ikonisk vintage-butik med kvalitetsfund fra flere årtier
+        		<br></br>👗 Bredt udvalg af mærker som YSL, Gucci, Chanel og Versace</p>
+    	</div>
+
+	</div>
+
+<!-- dette design der gælder for alle "emner" :-->	
+	<style>
+	.centreret {
+    	display: flex;      	/* Gør containeren til en flex-box */
+    	justify-content: center;/* Centrerer hele gruppen vandret på siden */
+    	align-items: center; 	/* Centrerer billede og tekst lodret i forhold til hinanden */
+    	gap: 20px;           	/* Laver luft mellem billede og tekst */
+    	width: 100%			/* Sørger for at containeren fylder hele bredden */
+    	margin-top: 20px;       /* Valgfrit: lidt luft i toppen */}
+
+    	/* Dette er tricket: Giv tekst-området en fast bredde */
+	.centreret div {width: 400px; /* Juster dette tal, så det passer til din længste overskrift */
+    text-align: left; /* Sørger for at teksten starter samme sted */}
+
+	.centreret img {flex-shrink: 0; /* Sikrer at billedet ikke bliver mast, hvis teksten er lang */}
+	</style>
+
+<!-- design på skyggen:-->
+	<style>
+		.skygge {
+					/* Obligatorisk: Horisontal og vertikal forskydning (f.eks. 5px til højre, 5px ned) */
+    	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);} /*10px 10px: Skyggens position 													(vandret og lodret).
+														15px: Hvor meget skyggen skal sløres (blur).
+														rgba(0,0,0,0.5): Farve og gennemsigtighed (her sort med 50% gennemsigtighed) */
+	</style>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

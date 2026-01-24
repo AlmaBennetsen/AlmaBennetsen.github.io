@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<!-- dette giver bagrundsfarven og billedet i toppen:-->
+<head>
+    <title>om os</title>
+</head>
+<body style="background-color: #CC9999;">
+
+    <!-- Billedet + overskrift indsættes herunder -->
+    <div class="billede-container">
+
+        <img src="tøj.jpg"alt="vintage" height="300" width="1450" class="baggrundsbillede">
+
+    <h1 class="overskrift-tekst">Luksus Vintage</h1>
+    </div>
+
+<!-- sidens overskrift (design) :--> 
+    <style>
+ /* Overskriften placeret ovenpå billedet */
+        .overskrift-tekst {
+            position: absolute;
+            top: 120px;    /* Afstand fra toppen af billedet */
+            left: 380px;   /* Afstand fra venstre side */
+            color: white; /* Hvid tekst så den kan ses */
+            margin: 0;
+            font-size: 100px;
+            font-family:palatino linotype; /* skrifttype */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Gør den nemmere at læse */}
+    </style>
+
+
+<!--  knappen der fører tilbage til menuen:-->
+ <nav>
+            <div position:bottom>
+        <a href="file:///Users/almabennetsen/Library/CloudStorage/OneDrive-Personligt/3.%20G/Informatik/Aflevering%204/Menu.html" target="_self">
+        <button class="overlay-tekst">menu</button>
+        </a>
+            </div>
+</nav>
+
+<!-- designet på menu-knappen:-->
+    <style>
+        .overlay-tekst {background-color: #FF9999; /* rosa baggrund */
+        color: white; /* Hvid tekst */
+        border: none; /* Ingen kant */
+        padding: 10px 20px; /* Indre polstring */
+        border-radius: 5px; /* Afrundede hjørner */
+        cursor: pointer; /* Ændrer musen til en pegefinger */
+        font-size: 16px;
+        transition: background-color 0.3s; /* Blød overgang ved hover */}
+        .overlay-tekst:hover {background-color: #FFCCCC; /* lysere rosa ved hover */}>
+    </style>
+
+
+
+<!-- placering af menu-knappen:-->
+    <style>
+        .billede-container {position: relative; /* Vigtigt for absolut positionering */
+        display: inline-block; /* Eller block, afhængig af layout */}
+        .overlay-tekst {
+        position: absolute;
+        top: 8%; /* Centrerer vertikalt (kan justeres) */
+        left: 5%; /* Centrerer horisontalt (kan justeres) */
+        transform: translate(-50%, -50%); /* Justerer midten præcist */
+        color: white; /* Gør teksten synlig */
+        background-color: #FF9999; /* Valgfrit: baggrund for læsbarhed */
+        padding: 10px;
+        text-align: center;}
+    </style>
+
+
+<!-- Her begynder designet på selve siden:-->
+
+<!-- overskrift i midten:-->
+    <body><strong><u><h1 style="text-align: center;">OM OS</h1></u></strong></body>
+
+
+<!-- brødtekst der forklarer om hjemmesidens tanker og værdier:-->
+    <body><p style="text-align: center;">Vi har skabt denne platform til dig, der elsker mode, men ønsker at udleve det med omtanke. <br> Vores mission er at samle og formidle de bedste luksusgenbrugsbutikker, hvor kvalitet, stil og bæredygtighed går hånd i hånd.
+        <br></br>
+    Hos os finder du et kurateret overblik over udvalgte vintage- og secondhandbutikker, der tilbyder eksklusivt tøj, accessories og design med historie. <br> Vi tror på, at god stil ikke behøver at være nyproduceret, og at genbrug er en vigtig del af fremtidens mode.
+        <br></br>
+    Hjemmesiden er udviklet med fokus på æstetik, brugervenlighed og inspiration, så du nemt kan gå på opdagelse, finde nye favoritter og blive inspireret til en mere ansvarlig garderobe. <br> Sammen med passionerede profiler og influencers, der deler vores værdier, ønsker vi at gøre luksusgenbrug mere synligt, simpelt og attraktivt.
+        <br></br>
+    Velkommen til et univers, hvor mode, kvalitet og bæredygtighed mødes <3</p></body>
+
+
+
+</html>
